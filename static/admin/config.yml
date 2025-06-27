@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main # hoặc master nếu bạn dùng branch đó
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "docs"
+    label: "Tài liệu"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Tiêu đề", name: "title", widget: "string" }
+      - {
+          label: "Mô tả",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Nội dung", name: "body", widget: "markdown" }
