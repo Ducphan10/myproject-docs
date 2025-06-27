@@ -95,7 +95,6 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/gioi-thieu', label: 'tài liệu hướng dẫn', position: 'left'},
-          { to: '/api', label: 'API', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
